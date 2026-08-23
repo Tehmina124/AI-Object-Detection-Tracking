@@ -3,4 +3,4 @@ opencv-python-headless
 ultralytics
 deep-sort-realtime
 numpy
-pandas
+pillow
