@@ -2,5 +2,5 @@ streamlit
 opencv-python-headless
 ultralytics
 deep-sort-realtime
-numpy<2
+numpy
 pandas
