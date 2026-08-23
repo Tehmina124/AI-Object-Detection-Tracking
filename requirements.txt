@@ -1,6 +1,6 @@
 streamlit
 ultralytics
 deep-sort-realtime
-opencv-python-headless
-numpy
-pandas
+opencv-python-headless==4.11.0.86
+numpy==1.26.4
+pandas==2.3.3
