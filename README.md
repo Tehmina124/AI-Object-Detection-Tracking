@@ -1,15 +1,15 @@
-🎯 AI Object Detection & Tracking
+# 🎯 AI Object Detection & Tracking
 
 <p align="center">
   <img src="./AI OBJECT.png" width="100%" alt="AI Object Detection & Tracking Banner">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/YOLO-Object%20Detection-purple?style=for-the-badge" alt="YOLO">
-  <img src="https://img.shields.io/badge/DeepSORT-Object%20Tracking-orange?style=for-the-badge" alt="DeepSORT">
-  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-red?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
-  <img src="https://img.shields.io/badge/Streamlit-Web%20App-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/YOLO-Object%20Detection-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/DeepSORT-Object%20Tracking-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-red?style=for-the-badge&logo=opencv&logoColor=white">
+  <img src="https://img.shields.io/badge/Streamlit-Web%20App-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white">
 </p>
 
 <p align="center">
@@ -26,17 +26,23 @@
   </a>
 </p>
 
-📌 About the Project
+---
 
-AI Object Detection & Tracking is a Computer Vision application that detects, tracks, and analyzes objects in uploaded videos using YOLO and DeepSORT.
+## 📌 About the Project
 
-The system processes videos frame-by-frame, detects objects, assigns unique tracking IDs, visualizes movement trajectories, generates real-time statistics and alerts, and produces final analytics and tracking reports.
+**AI Object Detection & Tracking** is an intelligent Computer Vision application designed to detect, track, and analyze objects in uploaded videos.
 
-The application is built with an interactive Streamlit dashboard, allowing users to upload videos, adjust detection settings, filter object classes, monitor tracking information, view trajectories, analyze results, and download the processed video.
+The system combines **YOLO** for real-time object detection with **DeepSORT** for multi-object tracking. It processes videos frame-by-frame, assigns unique IDs to detected objects, tracks their movement, generates trajectories, monitors detection events, and provides detailed analytics.
 
-🎓 Internship Project: DecodeLabs AI Internship — Task 4
+The project is developed as an interactive **Streamlit web application**, allowing users to upload videos, customize detection settings, filter object classes, monitor tracking information, view analytics, and download the processed video.
 
-🚀 Live Demo
+### 🎓 Internship Project
+
+**DecodeLabs AI Internship — Task 4**
+
+---
+
+## 🚀 Live Demo
 
 <p align="center">
   <a href="https://ai-object-detection-tracking-xoydqolhfxgcxmvefv45ac.streamlit.app/">
@@ -44,90 +50,78 @@ The application is built with an interactive Streamlit dashboard, allowing users
   </a>
 </p>
 
-The application is deployed using Streamlit Community Cloud.
+The application is deployed using **Streamlit Community Cloud**.
 
-✨ Key Features
+---
 
-🤖 Detection & Tracking
+## ✨ Key Features
 
-YOLO real-time object detection
+### 🤖 Object Detection & Tracking
 
-DeepSORT multi-object tracking
+* YOLO real-time object detection
+* DeepSORT multi-object tracking
+* Unique tracking ID assignment
+* Person detection and tracking
+* Vehicle detection and tracking
+* Object class filtering
+* Adjustable confidence threshold
+* Bounding boxes and object labels
 
-Unique ID assignment
+### 📍 Movement & Trajectory Analysis
 
-People detection and tracking
+* Track object movement across frames
+* Store previous object positions
+* Visualize movement trajectories
+* Adjustable trajectory length
+* Current and previous object positions
+* Individual object tracking IDs
 
-Vehicle detection and tracking
+### 🚨 Alerts & Monitoring
 
-Object class filtering
+* Live detection alerts
+* Person detection alerts
+* Vehicle detection alerts
+* Configurable object-limit alerts
+* Detection alert log
+* Real-time monitoring during processing
 
-Adjustable confidence threshold
+### 📊 Analytics & Reports
 
-📍 Movement Analysis
+* Current object statistics
+* Unique object count
+* Unique people count
+* Unique vehicle count
+* Detection count by class
+* Maximum objects per frame
+* Processing FPS
+* Total processing time
+* Detection charts
+* Detailed tracking report
 
-Object tracking paths
+### 🎥 Video Processing
 
-Adjustable trajectory length
+* Upload video files
+* Frame-by-frame processing
+* Original video preview
+* Processed video preview
+* Bounding boxes
+* Object IDs
+* Tracking trajectories
+* Downloadable processed video
 
-Current and previous object positions
+---
 
-Movement trajectory visualization
+## 📁 Supported Video Formats
 
-🚨 Alerts & Monitoring
+The application supports:
 
-Live detection alerts
+`MP4` • `AVI` • `MOV` • `MKV`
 
-Person detection alerts
+---
 
-Vehicle detection alerts
+## 🧠 How It Works
 
-Configurable object-limit alerts
-
-Detection alert log
-
-📊 Analytics & Reports
-
-Live object statistics
-
-Unique object counts
-
-Unique people and vehicle counts
-
-Detection counts by class
-
-Maximum objects per frame
-
-Processing FPS
-
-Processing time
-
-Detection charts
-
-Detailed tracking report
-
-🎥 Video Processing
-
-Original video preview
-
-Processed video preview
-
-Frame-by-frame processing
-
-Bounding boxes and labels
-
-Object IDs
-
-Tracking trajectories
-
-Downloadable processed video
-
-📁 Supported Video Formats
-
-MP4 • AVI • MOV • MKV
-
-🧠 How It Works
-
+```text
 📁 Upload Video
        ↓
 🎥 Read Video Frames
@@ -155,113 +149,82 @@ MP4 • AVI • MOV • MKV
 🎥 Create Processed Video
        ↓
 ⬇️ Download Result
+```
 
-🛠️ Technology Stack
+---
 
-Technology
+## 🛠️ Technology Stack
 
-Purpose
+| Technology                   | Purpose                              |
+| ---------------------------- | ------------------------------------ |
+| 🐍 Python 3.12               | Application development              |
+| 🤖 YOLO                      | Real-time object detection           |
+| 🔍 DeepSORT                  | Multi-object tracking                |
+| 👁️ OpenCV                   | Computer vision and video processing |
+| 🎈 Streamlit                 | Interactive web application          |
+| 📊 Pandas                    | Data processing and analytics        |
+| 🔢 NumPy                     | Numerical processing                 |
+| 🐙 Git & GitHub              | Version control                      |
+| ☁️ Streamlit Community Cloud | Application deployment               |
 
-🐍 Python 3.12
+---
 
-Application development
+## 🎯 Supported Object Categories
 
-🤖 YOLO
+The system can detect common object categories supported by the selected YOLO model, including:
 
-Real-time object detection
+* 👤 Person
+* 🚗 Car
+* 🚌 Bus
+* 🚚 Truck
+* 🏍️ Motorcycle
+* 🚲 Bicycle
+* 🐕 Dog
+* 🐈 Cat
+* 🐦 Bird
 
-🔍 DeepSORT
+> The actual detected classes depend on the selected YOLO model and the uploaded video.
 
-Multi-object tracking
+---
 
-👁️ OpenCV
+## 👤 People Detection
 
-Computer vision & video processing
-
-🎈 Streamlit
-
-Interactive web application
-
-📊 Pandas
-
-Data processing & analytics
-
-🔢 NumPy
-
-Numerical processing
-
-🐙 Git & GitHub
-
-Version control
-
-☁️ Streamlit Community Cloud
-
-Deployment
-
-🎯 Supported Object Categories
-
-The system supports common object classes such as:
-
-👤 Person
-
-🚗 Car
-
-🚌 Bus
-
-🚚 Truck
-
-🏍️ Motorcycle
-
-🚲 Bicycle
-
-🐕 Dog
-
-🐈 Cat
-
-🐦 Bird
-
-The actual detected classes depend on the selected YOLO model and uploaded video.
-
-👤 People Detection
-
-The system can detect and track people throughout an uploaded video.
+The system can detect and track people throughout the uploaded video.
 
 For each confirmed person, the application can display:
 
-👤 Person class
+* 👤 Person class
+* 🆔 Unique tracking ID
+* 📦 Bounding box
+* 📍 Movement trajectory
+* 🎯 Detection confidence
+* 🚨 Detection alerts
 
-🆔 Unique tracking ID
+The application also calculates the number of **unique people detected** during video processing.
 
-📦 Bounding box
+---
 
-📍 Movement trajectory
+## 🚗 Vehicle Detection
 
-🎯 Detection confidence
+The application supports multiple vehicle categories, including:
 
-🚨 Detection alerts
+* 🚗 Car
+* 🚌 Bus
+* 🚚 Truck
+* 🏍️ Motorcycle
+* 🚲 Bicycle
 
-The application also calculates the number of unique people detected throughout the video.
+Vehicles receive unique tracking IDs and are included in the analytics and tracking reports.
 
-🚗 Vehicle Detection
+---
 
-The system supports multiple vehicle categories, including:
+## 📍 Object Tracking & Trajectories
 
-🚗 Car
+DeepSORT helps maintain object identities across video frames.
 
-🚌 Bus
+The application stores previous object positions and uses them to visualize movement trajectories.
 
-🚚 Truck
-
-🏍️ Motorcycle
-
-🚲 Bicycle
-
-Vehicles receive tracking IDs and are included in analytics and tracking reports.
-
-📍 Object Tracking & Trajectories
-
-DeepSORT maintains object identities across video frames and stores previous object positions to visualize movement.
-
+```text
 🆔 Object ID
      ↓
 📍 Current Position
@@ -271,137 +234,139 @@ DeepSORT maintains object identities across video frames and stores previous obj
 💾 Store Tracking Points
      ↓
 📈 Draw Movement Trajectory
+```
 
-This makes it easier to understand how objects move through the scene.
+This allows users to understand how detected objects move through the scene.
 
-🚨 Intelligent Alerts
+---
 
-The application includes an alert system that monitors detected objects during processing.
+## 🚨 Intelligent Alert System
+
+The application includes an alert system that monitors detected objects during video processing.
 
 Possible events include:
 
-👤 Person detection
+* 👤 Person detection
+* 🚗 Vehicle detection
+* ⚠️ Object-limit conditions
+* 🔔 Detection events
 
-🚗 Vehicle detection
+The dashboard provides both:
 
-⚠️ Object-limit conditions
+* **Live Alerts**
+* **Detection Alert Log**
 
-🔔 Detection events
+---
 
-The dashboard provides both Live Alerts and a Detection Alert Log.
-
-📊 Live Statistics
+## 📊 Live Statistics
 
 During video processing, the dashboard displays real-time information such as:
 
-Statistic
+| Statistic          | Description               |
+| ------------------ | ------------------------- |
+| 🎯 Current Objects | Objects currently visible |
+| 👤 People          | Current people detected   |
+| 🚗 Vehicles        | Current vehicles detected |
+| ⚡ Processing FPS   | Current processing speed  |
 
-Description
+---
 
-🎯 Current Objects
+## 📈 Final Analytics
 
-Objects currently visible
+After video processing, the application generates final analytics including:
 
-👤 People
+* 🆔 Unique objects
+* 👤 Unique people
+* 🚗 Unique vehicles
+* ⏱️ Processing time
+* 🎯 Maximum objects per frame
+* 🔢 Detection events
+* ⚡ Average processing FPS
+* 📊 Detection statistics
 
-Current people detected
+---
 
-🚗 Vehicles
+## 🎚️ Detection Settings
 
-Current vehicles detected
+The Streamlit sidebar provides controls for customizing the detection process.
 
-⚡ Processing FPS
+### Confidence Threshold
 
-Current processing speed
+Users can select the minimum confidence required for a detection.
 
-📈 Final Analytics
-
-After processing, the application generates final statistics including:
-
-🆔 Unique objects
-
-👤 Unique people
-
-🚗 Unique vehicles
-
-⏱️ Processing time
-
-🎯 Maximum objects per frame
-
-🔢 Detection events
-
-⚡ Average processing FPS
-
-🎚️ Detection Settings
-
-The sidebar provides controls for customizing detection.
-
-Confidence Threshold
-
-Users can choose the minimum confidence required for a detection.
-
+```text
 0.10 ─────────────── 0.50 ─────────────── 0.95
+```
 
-A higher threshold generally produces fewer but more confident detections.
+A higher confidence threshold generally produces fewer but more confident detections.
 
-Preview Every N Frames
+### Preview Every N Frames
 
-Controls how frequently processed frames are displayed in the Streamlit interface, helping reduce UI overhead.
+Controls how frequently processed frames are displayed in the Streamlit interface and can help reduce UI overhead.
 
-Object Filter
+### Object Filter
 
-Users can select which object classes should be tracked.
+Users can select which object classes should be detected and tracked.
 
 Example:
 
+```text
 ☑ Person
 ☑ Car
 ☑ Bus
 ☑ Truck
 ☑ Motorcycle
 ☑ Bicycle
+```
 
-📹 Video Information
+---
 
-Before processing, the application displays information about the uploaded video:
+## 📹 Video Information
 
-📐 Resolution
+Before processing, the application displays information about the uploaded video, including:
 
-🎞️ Video FPS
-
-🎬 Total frames
-
-⏱️ Duration
+* 📐 Resolution
+* 🎞️ Video FPS
+* 🎬 Total frames
+* ⏱️ Duration
 
 Example:
 
+```text
 Resolution: 768 × 432
 Video FPS: 12.0
 Total Frames: 596
 Duration: 49.7 seconds
+```
 
-ℹ️ Actual values depend on the uploaded video.
+> Actual values depend on the uploaded video.
 
-📄 Detailed Tracking Report
+---
+
+## 📄 Detailed Tracking Report
 
 The application provides detailed tracking information that can include:
 
-🆔 Object ID
+* 🆔 Object ID
+* 🎯 Object class
+* 🔢 Detection count
+* 📍 Tracking information
+* 🚨 Alert information
+* ⏱️ Processing information
 
-🎯 Object class
+This makes the project useful for basic:
 
-🔢 Detection count
+* Video surveillance
+* Object monitoring
+* Traffic monitoring
+* Movement analysis
+* Video analytics
 
-📍 Tracking information
+---
 
-🚨 Alert information
+# 📂 Project Structure
 
-⏱️ Processing information
-
-This makes the project useful for basic video surveillance, monitoring, and analytics scenarios.
-
-📂 Project Structure
-
+```text
 AI-Object-Detection-Tracking/
 │
 ├── app.py
@@ -417,95 +382,131 @@ AI-Object-Detection-Tracking/
     ├── detection.png
     ├── analytics.PNG
     └── process video.PNG
+```
 
-📸 Screenshots
+---
 
-🏠 Home Page
+# 📸 Screenshots
+
+## 🏠 Home Page
 
 <p align="center">
-  <img src="./Screenshots/Home.PNG" width="90%" alt="Home Page">
+  <img src="./Screenshots/Home.PNG" width="90%" alt="AI Object Detection Tracking Home Page">
 </p>
 
-🎯 Object Detection
+---
+
+## 🎯 Object Detection
 
 <p align="center">
   <img src="./Screenshots/Detaction.PNG" width="90%" alt="Object Detection">
 </p>
 
-📊 Detection Results
+---
+
+## 📊 Detection Results
 
 <p align="center">
   <img src="./Screenshots/detection.png" width="90%" alt="Detection Results">
 </p>
 
-📈 Analytics Dashboard
+---
+
+## 📈 Analytics Dashboard
 
 <p align="center">
   <img src="./Screenshots/analytics.PNG" width="90%" alt="Analytics Dashboard">
 </p>
 
-🎥 Processed Video
+---
+
+## 🎥 Processed Video
 
 <p align="center">
   <img src="./Screenshots/process video.PNG" width="90%" alt="Processed Video">
 </p>
 
-🚀 How to Run Locally
+---
 
-1️⃣ Clone the Repository
+# 🚀 How to Run Locally
 
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/Tehmina124/AI-Object-Detection-Tracking.git
+```
 
-2️⃣ Open the Project Folder
+## 2️⃣ Open the Project Folder
 
+```bash
 cd AI-Object-Detection-Tracking
+```
 
-3️⃣ Create a Virtual Environment
+## 3️⃣ Create a Virtual Environment
 
+```bash
 python -m venv venv
+```
 
-4️⃣ Activate the Virtual Environment
+## 4️⃣ Activate the Virtual Environment
 
-Windows:
+### Windows
 
+```bash
 venv\Scripts\activate
+```
 
-5️⃣ Install Dependencies
+## 5️⃣ Install Dependencies
 
+```bash
 python -m pip install -r requirements.txt
+```
 
-6️⃣ Run the Streamlit Application
+## 6️⃣ Run the Streamlit Application
 
+```bash
 python -m streamlit run app.py
+```
 
-7️⃣ Open in Browser
+## 7️⃣ Open in Browser
 
+```text
 http://localhost:8501
+```
 
-📦 Required Dependencies
+---
+
+# 📦 Required Dependencies
 
 The project uses packages including:
 
+```text
 streamlit
 opencv-python
 ultralytics
 deep-sort-realtime
 numpy
 pandas
+```
 
-All required packages should be listed in:
+All required dependencies are listed in:
 
+```text
 requirements.txt
+```
 
-☁️ Deployment
+---
 
-The application is deployed using Streamlit Community Cloud.
+# ☁️ Deployment
 
-Deployment Flow
+The application is deployed using **Streamlit Community Cloud**.
 
+### Deployment Flow
+
+```text
 🐙 GitHub Repository
         ↓
-📁 Upload Project Files
+📁 Project Files
         ↓
 📄 requirements.txt
         ↓
@@ -514,200 +515,130 @@ Deployment Flow
 ▶️ Deploy Application
         ↓
 🌐 Public Live Demo
+```
 
-🎯 Project Objectives
+### 🌐 Live Application
+
+https://ai-object-detection-tracking-xoydqolhfxgcxmvefv45ac.streamlit.app/
+
+---
+
+# 🎯 Project Objectives
 
 The main objectives of this project are:
 
-🤖 Implement object detection
+* 🤖 Implement object detection
+* 🔍 Implement multi-object tracking
+* 🆔 Assign unique IDs to detected objects
+* 👤 Detect and track people
+* 🚗 Detect and track vehicles
+* 📍 Visualize object trajectories
+* 🚨 Generate detection alerts
+* 📊 Generate real-time statistics
+* 📈 Generate final analytics
+* 🎥 Process uploaded videos
+* ⬇️ Allow users to download processed videos
+* 🎈 Build an interactive Streamlit application
+* ☁️ Deploy an AI application online
 
-🔍 Implement multi-object tracking
+---
 
-🆔 Assign unique IDs to detected objects
-
-👤 Detect and track people
-
-🚗 Detect and track vehicles
-
-📍 Visualize object trajectories
-
-🚨 Generate detection alerts
-
-📊 Generate real-time statistics
-
-📈 Generate final analytics
-
-🎥 Process uploaded videos
-
-⬇️ Allow users to download processed videos
-
-🎈 Build an interactive Streamlit application
-
-☁️ Deploy an AI application online
-
-💡 What I Learned
+# 💡 What I Learned
 
 Through this project, I gained practical experience in:
 
-🐍 Python development
+* 🐍 Python development
+* 👁️ Computer Vision
+* 🤖 YOLO object detection
+* 🔍 DeepSORT object tracking
+* 🎥 Video processing
+* 📦 Bounding-box processing
+* 🆔 Object identity tracking
+* 📍 Trajectory visualization
+* 🚨 Alert generation
+* 📊 Data analytics
+* 🎈 Streamlit development
+* 🐙 Git & GitHub
+* ☁️ Streamlit Cloud deployment
 
-👁️ Computer Vision
+---
 
-🤖 YOLO object detection
-
-🔍 DeepSORT object tracking
-
-🎥 Video processing
-
-📦 Bounding-box processing
-
-🆔 Object identity tracking
-
-📍 Trajectory visualization
-
-🚨 Alert generation
-
-📊 Data analytics
-
-🎈 Streamlit development
-
-🐙 Git & GitHub
-
-☁️ Streamlit Cloud deployment
-
-🔮 Future Improvements
+# 🔮 Future Improvements
 
 Potential future improvements include:
 
-🧠 Custom-trained YOLO models
-
-🎯 Higher-accuracy detection
-
-👥 Advanced crowd analysis
-
-🚨 Real-time notification system
-
-📧 Email alerts
-
-📱 Mobile notifications
-
-🔊 Audio alerts
-
-📷 Live camera support
-
-🌐 IP camera / CCTV integration
-
-🧠 Advanced behavior detection
-
-🚶 Person re-identification
-
-🚗 License plate detection
-
-📊 CSV/PDF analytics export
-
-🗺️ Advanced tracking visualization
-
-⚡ GPU-accelerated processing
-
-🔐 User authentication
-
-⭐ Project Highlights
-
-Feature
-
-Description
-
-🤖 YOLO Detection
-
-Detect objects in video frames
-
-🔍 DeepSORT Tracking
-
-Track objects across frames
-
-🆔 Unique IDs
-
-Maintain object identities
-
-👤 People Detection
-
-Detect and count people
-
-🚗 Vehicle Detection
-
-Detect multiple vehicle types
-
-📍 Trajectories
-
-Visualize object movement
-
-🚨 Alerts
-
-Generate detection alerts
-
-📊 Live Statistics
-
-Monitor processing in real time
-
-📈 Analytics
-
-Generate final statistics
-
-📋 Tracking Report
-
-Summarize tracking information
-
-🎚️ Confidence Control
-
-Adjust detection sensitivity
-
-🎯 Object Filtering
-
-Select object classes
-
-🎥 Video Processing
-
-Generate processed videos
-
-⬇️ Download
-
-Download processed results
-
-☁️ Cloud Deployment
-
-Public Streamlit application
-
-🎓 Internship Project
-
-DecodeLabs AI Internship — Task 4
-
-👩‍💻 About Me
-
-Tehmina Anwar
-
-BSAI Student | AI/ML Engineer | Python Developer
-
-I am a Bachelor of Science in Artificial Intelligence student interested in building practical applications using Artificial Intelligence, Machine Learning, Natural Language Processing, Generative AI, and Computer Vision.
-
-🌟 Areas of Interest
-
-🐍 Python
-
-🤖 Machine Learning
-
-🧠 Generative AI
-
-💬 Large Language Models
-
-🔎 Retrieval-Augmented Generation
-
-📝 Natural Language Processing
-
-👁️ Computer Vision
-
-🚀 AI Application Development
-
-🔗 Connect With Me
+* 🧠 Custom-trained YOLO models
+* 🎯 Higher-accuracy detection
+* 👥 Advanced crowd analysis
+* 🚨 Real-time notification system
+* 📧 Email alerts
+* 📱 Mobile notifications
+* 🔊 Audio alerts
+* 📷 Live camera support
+* 🌐 IP camera / CCTV integration
+* 🧠 Advanced behavior detection
+* 🚶 Person re-identification
+* 🚗 License plate detection
+* 📊 CSV/PDF analytics export
+* 🗺️ Advanced tracking visualization
+* ⚡ GPU-accelerated processing
+* 🔐 User authentication
+
+---
+
+# ⭐ Project Highlights
+
+| Feature                | Description                     |
+| ---------------------- | ------------------------------- |
+| 🤖 YOLO Detection      | Detect objects in video frames  |
+| 🔍 DeepSORT Tracking   | Track objects across frames     |
+| 🆔 Unique IDs          | Maintain object identities      |
+| 👤 People Detection    | Detect and count people         |
+| 🚗 Vehicle Detection   | Detect multiple vehicle types   |
+| 📍 Trajectories        | Visualize object movement       |
+| 🚨 Alerts              | Generate detection alerts       |
+| 📊 Live Statistics     | Monitor processing in real time |
+| 📈 Analytics           | Generate final statistics       |
+| 📋 Tracking Report     | Summarize tracking information  |
+| 🎚️ Confidence Control | Adjust detection sensitivity    |
+| 🎯 Object Filtering    | Select object classes           |
+| 🎥 Video Processing    | Generate processed videos       |
+| ⬇️ Download            | Download processed results      |
+| ☁️ Cloud Deployment    | Public Streamlit application    |
+
+---
+
+# 🎓 Internship Information
+
+**Program:** DecodeLabs AI Internship
+**Task:** Task 4
+**Project:** AI Object Detection & Tracking
+**Domain:** Artificial Intelligence / Computer Vision
+
+---
+
+# 👩‍💻 About Me
+
+## Tehmina Anwar
+
+**BSAI Student | AI/ML Engineer | Python Developer**
+
+I am a Bachelor of Science in Artificial Intelligence student interested in building practical and intelligent applications using Artificial Intelligence, Machine Learning, Generative AI, Natural Language Processing, and Computer Vision.
+
+### 🌟 Areas of Interest
+
+* 🐍 Python
+* 🤖 Machine Learning
+* 🧠 Generative AI
+* 💬 Large Language Models
+* 🔎 Retrieval-Augmented Generation
+* 📝 Natural Language Processing
+* 👁️ Computer Vision
+* 🚀 AI Application Development
+
+---
+
+# 🔗 Connect With Me
 
 <p align="center">
   <a href="https://github.com/Tehmina124">💻 GitHub</a> •
@@ -716,9 +647,11 @@ I am a Bachelor of Science in Artificial Intelligence student interested in buil
   <a href="https://ai-object-detection-tracking-xoydqolhfxgcxmvefv45ac.streamlit.app/">🚀 Live Project</a>
 </p>
 
-⭐ Support
+---
 
-If you found this project useful or interesting, consider giving the repository a ⭐ Star on GitHub.
+# ⭐ Support
+
+If you found this project useful or interesting, consider giving the repository a ⭐ **Star** on GitHub.
 
 Your support is greatly appreciated! ❤️
 
